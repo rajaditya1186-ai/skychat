@@ -14,57 +14,43 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+# ☁️ SkyChat — Cloud-Based Real-Time Chat Application
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**SkyChat** is a modern, full-stack **real-time chat web application** built with a **serverless architecture** on AWS and a responsive **React.js frontend**.  
+It enables authenticated users to communicate instantly through WebSockets with messages securely stored in DynamoDB — no traditional servers required.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Project Overview
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+SkyChat is designed to demonstrate **real-world cloud engineering**, **scalability**, and **modern app design**.  
+It provides a seamless chat experience powered by AWS-managed services, offering high availability, fault tolerance, and near-zero maintenance.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Users can register, verify their emails, log in, and participate in live chat rooms — all in real time.  
+The app combines **cloud-native services** with a sleek **React UI**, making it a complete end-to-end product.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🎯 Key Features
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- 🔐 **User Authentication** — Managed through **AWS Cognito** (sign-up, login, email verification).  
+- ⚡ **Real-Time Messaging** — Instant message exchange via **WebSockets** using **API Gateway + Lambda**.  
+- ☁️ **Serverless Backend** — Entire backend logic built with **AWS Lambda**, no EC2 or manual servers.  
+- 💬 **Persistent Storage** — Chat messages and active connections stored in **DynamoDB**.  
+- 🧑‍💻 **Modern UI** — Built with **React.js**, responsive across desktop and mobile.  
+- 🌍 **Global Access** — Frontend hosted on **S3** and optionally accelerated with **CloudFront CDN**.  
+- 🔒 **Security First** — All traffic and credentials managed securely using AWS IAM and Cognito tokens.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🧠 Tech Stack
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| Layer | Technology |
+|-------|-------------|
+| Frontend | React.js, HTML, CSS, JavaScript |
+| Authentication | AWS Cognito |
+| Messaging | AWS API Gateway (WebSocket) |
+| Compute Logic | AWS Lambda (Node.js) |
+| Database | Amazon DynamoDB |
+| Hosting | Amazon S3, CloudFront |
+| Permissions | AWS IAM Roles & Policies |
